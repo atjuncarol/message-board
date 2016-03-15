@@ -12,27 +12,23 @@
   </div>
 </div>
 
-<form>
   <div class="form-group">
-    <div class="class="col-sm-2 padding10">
-      <%= form_for(@message) do |f| %>
-        名前:
-      <%= f.text_field :name %>
+      名前:
+    <%= form_for(@message) do |f| %>
+    <%= f.text_field :name, :class => "col-sm-2 control-label" %>
+  </div>
+    
+  <div class="row">
+      </div>
+    <div class="form-group">
+           内容:
+      <%= f.text_area :body, :class => "form-control", :rows => 3 %>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-6 padding10">
+      <%= f.submit class: "btn btn-sm btn-primary" %>
     </div>
   </div>
-
-  <div class="form-group">
-    <div class="class="col-sm-7 padding10">
-            内容:
-    <%= f.text_area :body, :rows => "3" %>
-    </div>
-  </div>
-
-<div class="row">
-        <div class="col-sm-6 padding10">
-    <%= f.submit class: "btn btn-sm btn-primary" %>
-    </div>
-  </div>
-</form>
-
-<% end %>
+</div>
+  <% end %>
