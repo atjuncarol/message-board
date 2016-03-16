@@ -9,14 +9,19 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Message Board</a>
+        </div>
+    </nav>
+    
     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Message Board</a>
-      </div>
+      <% if notice %>
+        <div class ="alert alert-info">
+          <%= notice %>
+        </div>
+      <% end %> 
+    
+     <%= yield %>
     </div>
-  </nav>
-  <div class="container">
-    <%= yield %>
-  </div>
 </body>
 </html>
