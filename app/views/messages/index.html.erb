@@ -16,14 +16,13 @@
       <li><%= message.name %></li>
       <li><%= message.body %></li>
       <li><%= message.age %></li>
-      <li>(<%= link_to "edit" , edit_message_path(message) %></li>
+      <li><%= link_to "edit" , edit_message_path(message) %></li>
       <li><%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
-      )</li>
+      </li>
       </ul>
       <br>
     <% end %>
   </div>
 </div>
 
-<% #部分テンプレートを読み込んでいる %>
 <%= render 'form' %>
