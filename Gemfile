@@ -16,6 +16,13 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem "actionview", ">= 5.2.4.4"
+gem "actionpack", ">= 5.2.4.6"
+gem "json", ">= 2.3.0"
+gem "rake", ">= 12.3.3"
+gem "rack", ">= 2.1.4"
+gem "loofah", ">= 2.3.1"
+gem "nokogiri", ">= 1.11.4"
+gem "activejob", ">= 4.2.11"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
