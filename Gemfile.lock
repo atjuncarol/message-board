@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     actionmailer (4.2.5)
-      actionpack (= 4.2.5)
+      actionpack (>= 5.2.4.6)
       actionview (= 4.2.5)
       activejob (= 4.2.5)
       mail (~> 2.5, >= 2.5.4)
