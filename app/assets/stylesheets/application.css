@@ -1,0 +1,23 @@
+body {
+	background-color: #eee;
+	}
+
+ul {
+ list-style:none;
+ }
+
+ul.nav	{
+	display:table;
+	table-layout: fixed;
+	width:100%;
+}
+
+ul.nav li{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+}
+
+.nav li a {
+  display:inline;
+}

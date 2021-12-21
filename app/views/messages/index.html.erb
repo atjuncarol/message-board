@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    メッセージ一覧
+  </div>
+
+  <div class="panel-body">
+     <ul class="nav">
+      <li><span class="label label-info">名前</span></li>
+      <li><span class="label label-info">内容</span></li>
+      <li><span class="label label-info">年齢</span></li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+     </ul>
+    <% @messages.each do |message| %>
+     <ul class="nav">
+      <li><%= message.name %></li>
+      <li><%= message.body %></li>
+      <li><%= message.age %></li>
+      <li><%= link_to "edit" , edit_message_path(message) %></li>
+      <li><%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
+      </li>
+      </ul>
+      <br>
+    <% end %>
+  </div>
+</div>
+
+<%= render 'form' %>
