@@ -21,9 +21,8 @@ gem "json", ">= 2.3.0"
 gem "rake", ">= 12.3.3"
 gem "rack", ">= 2.1.4"
 gem "loofah", ">= 2.3.1"
-gem "nokogiri", ">= 1.12.5"
+gem "nokogiri", ">= 1.11.4"
 gem "activejob", ">= 4.2.11"
-gem "rdoc", ">= 6.3.1"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
