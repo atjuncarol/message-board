@@ -15,11 +15,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem "actionview", ">= 5.2.4.4"
-gem "actionpack", ">= 5.2.4.6"
-gem "json", ">= 2.3.0"
+gem "actionview", ">= 4.2.5"
+gem "actionpack", ">= 4.2.5"
+gem "json", ">= 1.8"
 gem "rake", ">= 12.3.3"
-gem "rack", ">= 2.1.4"
+gem "rack", ">= 1.6"
 gem "loofah", ">= 2.3.1"
 gem "nokogiri", ">= 1.12.5"
 gem "activejob", ">= 4.2.11"
@@ -33,6 +33,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem "rdoc", ">= 4.0"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
